@@ -4,7 +4,7 @@ import time
 import sys
 
 
-s=socket.socket()
+s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 sock.bind(('0.0.0.0', 2222))
 sock.listen(10)
