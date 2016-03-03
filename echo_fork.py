@@ -11,19 +11,18 @@ for i in range(10):
   if pid == 0:
     childpid = os.getpid()
     print "Child %s listening on localhost:4242" % childpid
-      try:
-        while 1:
-           
-                conn, addr = acceptor.accept()
-                data=conn.recv(1024)
-                if not data:break
-                if data == "close" or data == "Close"" conn.close()
-                conn.send(data)
-                
-                conn.close()
-               
-        except KeyboardInterrupt:
-            sys.exit()
+    try:
+      while 1:
+       
+        conn, addr = acceptor.accept()
+        data=conn.recv(1024)
+        if not data:break
+          if data == "close" or data == "Close"" conn.close()
+          conn.send(data)
+          
+          conn.close()
+         
+    except KeyboardInterrupt: sys.exit()
 
 
 try:
