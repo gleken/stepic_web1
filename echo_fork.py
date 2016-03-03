@@ -16,12 +16,12 @@ for i in range(10):
        
         conn, addr = acceptor.accept()
         data=conn.recv(1024)
-        if not data:break
-          if data == "close" or data == "Close"" conn.close()
-          conn.send(data)
-          
-          conn.close()
-         
+        if not data: break
+        if data == "close" or data == "Close"" conn.close()
+        conn.send(data)
+        
+        conn.close()
+       
     except KeyboardInterrupt: sys.exit()
 
 
