@@ -6,9 +6,9 @@ import sys
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-sock.bind(('0.0.0.0', 2222))
-sock.listen(10)
-conn, addr = sock.accept()
+s.bind(('0.0.0.0', 2222))
+s.listen(10)
+conn, addr = s.accept()
 
 pid=os.fork()
 if pid!=0:
