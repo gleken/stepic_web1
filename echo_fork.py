@@ -10,7 +10,7 @@ for i in range(10):
   pid = os.fork()
   if pid == 0:
     childpid = os.getpid()
-    print "Child %s listening on localhost:4242" % childpid
+    print "Child %s listening on 0.0.0.0:2222" % childpid
     try:
       while 1:
        
