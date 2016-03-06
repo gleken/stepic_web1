@@ -4,6 +4,7 @@ mkdir -p //home/box/web/public/js
 mkdir -p //home/box/web/uploads
 mkdir -p //home/box/web/etc
 touch //home/box/web/public/1.jpeg
+touch //home/box/web/uploads/1.jpeg
 
 
 
