@@ -1,0 +1,4 @@
+ Конфиг разместить в файле /home/box/etc/gunicorn.conf и подключите его с помощью символической ссылки /etc/gunicorn.d/test
+ загрузка http://docs.gunicorn.org/en/stable/run.html
+ 
+ размещаем /home/box/web/hello.py
