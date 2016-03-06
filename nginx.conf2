@@ -6,14 +6,17 @@ server {
         server_name localhost;                                                  
 
         location ^~ /uploads/ {
-        root //home/box/web/uploads/;
-        }
 
         location ~* \.\w+$ {
-        root //home/box/web/public/;
+
+        root /home/box/web;
         }
-        location / {
+
+
         return 404;
+
+
+
         }
 
         }
