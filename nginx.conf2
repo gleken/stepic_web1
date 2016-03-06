@@ -7,16 +7,11 @@ server {
 
         location ^~ /uploads/ {
 
-        location ~* \.\w+$ {
+                location ~* \.\w+$ {
 
-        root /home/box/web;
-        }
-
-
+                root /home/box/web;
+                }
         return 404;
-
-
-
         }
 
         }
